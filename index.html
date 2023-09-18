@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PORTFOLIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      .card > img{
+        height: 250px;
+        background-color: aquamarine;
+      }
+    </style>
+
   </head>
   <body>
 
     <!-- background image intro -->
-    <section class="d-flex flex-column px-3" style="background-image: url(images/arch.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px;">
+    <section class="container-fluid d-flex flex-column px-3 img-fluid" style="background-image: url(images/arch.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
       
       <!-- navbar -->
       <nav class="navbar navbar-expand-md">
@@ -30,7 +38,7 @@
                 <a class="nav-link" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#potfolio">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item d-md-none">
                 <a class="nav-link" href="#contact">Get in Touch</a>
@@ -47,7 +55,7 @@
       <!-- hero text -->
       <div class="container-md my-auto text-center">
         <div class="text-white">
-          <h2 class="fw-bold">Sharmaine Cardines</h2>
+          <h1 class="fw-bold">Sharmaine Cardines</h2>
           <h5>Freelane Front-End Web Developer</h5> 
         </div>
       </div>
@@ -56,12 +64,102 @@
 
     <!-- about me -->
 
-    <section>
-      
+    <section id="about">
+      <div class="container-md py-2 text-center">
+        <h2 class="">ABOUT ME</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus tempora nam, officia deserunt aperiam dolorem amet provident, at ea blanditiis quisquam perspiciatis similique voluptatem exercitationem fugiat ipsum, quam minus!</p>
+      </div>
     </section>
 
-
     <!-- portfolio grid -->
+
+    <section id="portfolio">
+
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>MY PORTFOLIO</h2>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="row justify-content-center my-4 py-3 px-2 g-3 bg-secondary">
+   
+        <div class="col-10 col-md-6 col-lg-3">
+          <div class="card align-items-center border-0 pt-3">
+            <img class="card-img-top img-fluid" src="#" alt="image">
+            <div class="card-body py-4 text-center">
+              <h5 class="card-title">Portfolio Title</h5>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-lg-3">
+          <div class="card align-items-center border-0 pt-3">
+            <img class="card-img-top img-fluid" src="#" alt="image">
+            <div class="card-body py-4">
+              <h5 class="card-title">Portfolio Title</h5>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-lg-3">
+          <div class="card align-items-center border-0 pt-3">
+            <img class="card-img-top img-fluid" src="#" alt="image">
+            <div class="card-body py-4">
+              <h5 class="card-title">Portfolio Title</h5>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-6 col-lg-3">
+          <div class="card align-items-center border-0 pt-3">
+            <img class="card-img-top img-fluid" src="#" alt="image">
+            <div class="card-body py-4">
+              <h5 class="card-title">Portfolio Title</h5>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <!-- form-control, form label, form-select, input-group, input-group-text -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">Want to colaborate? Fill out the form to contact me directly...</p>
+        </div>
+
+        <div class="row justify-contect-center">
+
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email" placeholder="e.g. milagring@example.com">
+
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="e.g. Milagring">
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- footer -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
