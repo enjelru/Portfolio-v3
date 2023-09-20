@@ -3,6 +3,6 @@
 
 
 ## LIST
-+ svg animation
-+ html png
-+ offcanvas nav
++ x svg animation
++ x vscode background png
++ o offcanvas nav 
