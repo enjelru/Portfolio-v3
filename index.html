@@ -15,8 +15,9 @@
 
 
     <style>
+      
       section {
-        padding: 50px 80px;
+        padding: 50px 25px;
       }
 
       .card > img {
@@ -35,17 +36,38 @@
 
       div.card {
         background-color: rgba(136,136,136,0.1);
-        height: 100%; 
+        /* height: 100%; 
         max-height: 600px;
         width: 100%;
-        max-width: 800px;
+        max-width: 800px; */
+      }
+
+      .card-wrapper {
+        overflow: hidden;
+      }
+
+      .card-wrapper > img {
+        display: block;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center; 
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+
+       .card-img-top:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
       }
 
       .object-fit-cover {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
+        /* display: block; */
+        /* aspect-ratio: 1 / 1; */
       }
 
+      
       .offcanvas-body {
         width: 100%;
         /* border: 1px solid salmon; */
@@ -57,13 +79,73 @@
         height: 70%;
       }
 
+      /* .nav-bar-nav:hover .nav-link:not(:hover) {
+        color: rgb(136, 136, 136);
+        transform: scale(1.3);
+        transition: 0.3s;
+      } */
+
+      div > h2 {
+        animation-delay: 0.5s;
+      }
+
+      .navbar-brand:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+
+      .navbar-collapse:hover .nav-link:not(:hover) {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+
+      .list-group-flush:hover .list-group-item:not(:hover) {
+        opacity: 0.5;
+        transition: all 200ms ease-in-out;
+      }
+      .list-group-item {
+        transition: all 200ms ease-in-out;
+      }
+      /* .list-group-item:hover {
+        transform: scale(1.15);
+        transition: all 200ms ease-in-out;
+        background: #0DCAF0;
+      } */
+
+      .go-to-top {
+        bottom: 15px;
+        right: 15px;
+        cursor: pointer;
+      }
+
+      .go-to-top:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+
+      .anim {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: moveup 0.5s linear forwards;
+      }
+
+      /* CSS ANIMATION */
+      @keyframes moveup {
+        100%{
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        
+      }
+
+
     </style>
 
   </head>
   <body>
 
     <!-- background image intro -->
-    <header class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill" style="background-image: url(https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1039&q=80); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
+    <header id="intro" class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill" style="background-image: url(https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1039&q=80); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
       
       <div class="container-fluid px-0 bg-overlay d-flex flex-column">
       <!-- navbar -->
@@ -90,19 +172,19 @@
               <div class="offcanvas-body navbar-collapse justify-content-end" id="main-nav">
                 <ul class="navbar-nav pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">
+                    <a class="nav-link text-white" href="#intro">
                       <i class="bi bi-house me-2 d-md-none"></i>Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">
+                    <a class="nav-link text-white" href="#about">
                       <span class="d-md-none me-2">//</span> About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">
+                    <a class="nav-link text-white" href="#portfolio">
                       <i class="bi bi-book-half me-2 d-md-none"></i>Portfolio</a>
                   </li>
                   <li class="nav-item d-md-none ">
-                    <a class="nav-link" href="#contact">
+                    <a class="nav-link text-white" href="#contact">
                       <i class="bi bi-telephone-fill me-2 d-md-none"></i>Contact</a>
                   </li>
                   <li class="nav-item ms-2 d-none d-md-inline">
@@ -132,12 +214,17 @@
     <!-- about me -->
 
     <section id="about">
+      
+      <div class="row justify-content-center align-items-center text-light">
 
-      <div class="container-md text-center text-light">
-        <img class="img-fluid object-fit-cover rounded-circle position-relative d-block start-50 translate-middle-x border border-5 border-white mb-5" src="https://www.sapiens.org/app/uploads/2020/02/Baby-Yoda-1024x576.jpg" alt="">
-        <h2 class="display-1 fw-semibold pb-3">ABOUT ME</h2>
-        <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
-        <p class="font-monospace text-justify">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>
+        <div class="col-12 text-center">
+          <img class="img-fluid object-fit-cover rounded-circle border border-4 border-white p-2" src="images/poster.jpg" alt="">
+        </div>
+        <div class="col-12 text-center text-lg-left">
+          <h2 class="display-1 fw-semibold pb-3 anim text-center">ABOUT ME</h2>
+          <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
+          <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>   
+        </div>
       </div>
     </section>
 
@@ -147,7 +234,7 @@
 
       <div class="container-lg px-0">
         <div class="text-left text-md-center">
-          <h2 class="display-2 fw-semibold text-light">MY<br>PORTFOLIO</h2>
+          <h2 class="display-1 fw-semibold anim">MY<br>PROJECTS</h2>
         </div>
       </div>
 
@@ -156,7 +243,9 @@
    
         <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
           <div class="card text-light border-0">
+            <div class="card-wrapper">
             <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1120&q=80" alt="image">
+          </div>
             <div class="card-body py-3">
               <h5 class="card-title display-6">Portfolio Title</h5>
               <p class="text-secondary">Lorem ipsum dolor sit.</p>
@@ -165,7 +254,9 @@
         </div>
         <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
           <div class="card text-light border-0">
-            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="image">
+            <div class="card-wrapper">
+              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="image">
+            </div>
             <div class="card-body py-3">
               <h5 class="card-title display-6">Portfolio Title</h5>
               <p class="text-secondary">Lorem ipsum dolor sit.</p>
@@ -174,7 +265,9 @@
         </div>
         <div class="col-12 px-0 col-md-12 p-md-3 pb-5 col-lg-4 px-lg-3 px-0">
           <div class="card text-light border-0">
-            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+            <div class="card-wrapper">
+              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+            </div>
             <div class="card-body py-3">
               <h5 class="card-title display-6">Portfolio Title</h5>
               <p class="text-secondary">Lorem ipsum dolor sit.</p>
@@ -183,7 +276,9 @@
         </div>
         <div class="col-12 px-0 col-md-6 p-md-3 col-lg-5 pb-5 col-lg-6 px-lg-3 col-xxl-4 px-0">
           <div class="card text-light border-0">
-            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="image">
+            <div class="card-wrapper">
+              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="image">
+            </div>
             <div class="card-body py-3">
               <h5 class="card-title display-5">Portfolio Title</h5>
               <p class="text-secondary">Lorem ipsum dolor sit.</p>
@@ -192,7 +287,9 @@
         </div>
         <div class="col-12 px-0 col-md-6 p-md-3 col-lg-5 pb-5 col-lg-6 col-xxl-4  px-lg-3 px-0">
           <div class="card text-light border-0">
-            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+            <div class="card-wrapper">
+              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
+            </div>
             <div class="card-body py-3">
               <h5 class="card-title display-5">Portfolio Title</h5>
               <p class="text-secondary">Lorem ipsum dolor sit.</p>
@@ -201,7 +298,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-info px-4" type="submit">See more projects</button>
+        <button class="btn btn-info px-4" type="submit">All Project Details</button>
       </div>
     </section>
 
@@ -223,7 +320,7 @@
                   <span class="input-group-text">
                     <i class="bi bi-envelope-fill"></i>
                   </span>
-                  <input type="email" class="form-control" id="email" placeholder="e.g. milagring@example.com" aria-label="e.g. milagring@example.com">
+                  <input type="email" class="form-control" id="email" placeholder="e.g. milagring@example.com" aria-label="e.g. milagring@example.com" style="font-size: 14px;" required>
                 </div>
               </div>
 
@@ -233,12 +330,12 @@
                   <span class="input-group-text">
                     <i class="bi bi-person-fill"></i>
                   </span>
-                  <input type="text" class="form-control" id="name" placeholder="e.g. Milagring">
+                  <input type="text" class="form-control" id="name" placeholder="e.g. Milagring" style="font-size: 14px;" required>
                 </div>
               </div>
 
               <div class="form-floating mb-4 mt-5">
-                <textarea id="query" class="form-control" style="height: 140px;"></textarea>
+                <textarea id="query" class="form-control" style="height: 140px;" required></textarea>
                 <label for="query">Your message...</label>
               </div>
 
@@ -253,7 +350,7 @@
     </section>
 
     <footer>
-      <div class="container-fluid bg-secondary d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center">
         <div class="container-md text-center mt-4">
           <div class="list-group-flush d-flex justify-content-center gap-4">
             <a href="#" class="list-group-item">
@@ -269,17 +366,20 @@
               <i class="bi bi-messenger fs-2"></i>
             </a>
           </div>
-          <div class="mt-2 d-flex justify-content-center gap-3">
+          <div class="mt-2 d-flex justify-content-center gap-3 flex-wrap">
             <p class="m-0">
               <i class="bi bi-envelope-at-fill"></i> yourName@gmail.com</p>
             <p class="m-0">
               <i class="bi bi-telephone-fill"></i> ####-###-####</p>
           </div>
-          <button class="btn btn-info my-4">Download CV</button>
+          <button class="btn btn-outline-info my-4">Download CV</button>
         </div>
       </div>   <!-- end of social icons -->
     </footer>
 
+    <a href="#intro"><span class="go-to-top active bg-light-subtle position-fixed p-3 rounded-1 opacity-1">
+      <i class="bi bi-arrow-up h5 fw-bold text-light"></i></span>
+    </a>
  
 
     <!-- footer Made with passion by Sharmaine Cardines. All right reserved. -->
