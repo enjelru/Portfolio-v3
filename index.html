@@ -66,7 +66,11 @@
         /* display: block; */
         /* aspect-ratio: 1 / 1; */
       }
-
+      
+      .offcanvas.showing, .offcanvas.show:not(.hiding) {
+      transform: none;
+      backdrop-filter: blur(3px);
+      }
       
       .offcanvas-body {
         width: 100%;
@@ -77,8 +81,8 @@
         display: block;
         max-width: 70%;
         height: 70%;
-        backdrop-filter: blur(5px);
-        background: rgba(34, 34, 34, 0.8);
+        /* backdrop-filter: blur(5px); */
+        background: rgba(31, 30, 30, 0.9);
         border-right: 1px solid  rgba(136,136,136,0.1);
         border-bottom: 1px solid rgba(136,136,136,0.1);
       }
@@ -94,7 +98,7 @@
         animation-delay: 0.5s;
       }
 
-      /* .chonky-underline::after {
+      /* underline::after {
         content: "";
         position: absolute;
         left: 25%;
@@ -106,7 +110,7 @@
         transition: all 0.1s ease-in-out;
       }
 
-      #portfolio .chonky-underline::after {
+      #portfolio underline::after {
         content: "";
         position: absolute;
         left: 27%;
@@ -147,12 +151,16 @@
         background: #0DCAF0;
       } */
 
+      .bi-chevron-up {
+        color: magenta;
+      }
       .go-to-top {
         bottom: 15px;
         right: 15px;
         cursor: pointer;
+        background: rgba(80, 80, 80, 0.5);
       }
-
+      
       .go-to-top:hover {
         opacity: 0.5;
         transition: 0.3s;
@@ -164,11 +172,42 @@
         animation: moveup 0.5s linear forwards;
       }
 
+      /* .sticky-top {
+        height: 20px;
+        position: fixed;
+        background: rgba(136,136,136,0.1);
+        top: 0;
+        visibility: hidden;
+        background: rgba(136,136,136,0.1);
+        height: 4vh;
+        z-index: 1;
+        position: absolute;     
+      }
+
+      .-sticky {
+        transform: translate3d(0,-100%,0);
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+      } */
+
+      /* nav.sticky-show {
+        animation: popDown 0.5s;
+      } */
+      
       /* CSS ANIMATION */
       @keyframes moveup {
         100%{
           opacity: 1;
           transform: translateY(0px);
+        }
+        
+      }
+
+      @keyframes popDown {
+        0%{
+          transform: translateY(-100px);
         }
         
       }
@@ -210,23 +249,23 @@
     <header id="intro" class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill" style="background-image: url(https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1039&q=80); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
       
       <div class="container-fluid px-0 bg-overlay d-flex flex-column">
-      <!-- navbar -->
-        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
-          <div class="container-lg py-2 justify-content-start justify-content-sm-between">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md w-100 fixed-top" data-bs-theme="dark">
+          <div class="container-lg py-2 justify-content-start justify-content-sm-between px-sm-5">
             <!-- toogle button for mobile nav -->
             <button class="navbar-toggler rounded-5 me-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
               <i class="bi bi-three-dots-vertical"></i>
             </button>
 
             <!-- navbar brand -->
-            <a href="#home" class="navbar-brand fw-semibold text-warning fs-3 fs-md-1">Sha<span class="text-white">Cardines</span>
+            <a href="#home" class="navbar-brand fw-semibold text-warning fs-3 fs-md-1">sha<span class="text-white">C</span>
             </a>
 
             <!-- offcanvas -->
-            <div class="offcanvas offcanvas-start rounded-end-3" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
+            <div class="offcanvas offcanvas-start rounded-end-3 bg-blur" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="main-navLabel">
-                  <i class="bi bi-stars me-2"></i>Welcome
+                  <i class="bi bi-stars pe-3"></i>Welcome
                 </h5>
                 <button class="btn-close rounded-circle shadow-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -235,19 +274,19 @@
                 <ul class="navbar-nav pe-3">
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#intro">
-                      <i class="bi bi-house me-2 d-md-none"></i>Home</a>
+                      <i class="bi bi-house-door-fill pe-3 d-md-none h4"></i>Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#about">
-                      <span class="d-md-none me-2">//</span> About</a>
+                      <i class="bi bi-person-fill d-md-none pe-3 h4"></i>About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#portfolio">
-                      <i class="bi bi-book-half me-2 d-md-none"></i>Portfolio</a>
+                      <i class="bi bi-book-half pe-3 d-md-none h4"></i>Portfolio</a>
                   </li>
                   <li class="nav-item d-md-none ">
                     <a class="nav-link text-white" href="#contact">
-                      <i class="bi bi-telephone-fill me-2 d-md-none"></i>Contact</a>
+                      <i class="bi bi-telephone-fill pe-3 h4 d-md-none"></i>Contact</a>
                   </li>
                   <li class="nav-item ms-2 d-none d-md-inline">
                     <a class="btn btn-outline-warning" href="#contact">Get in Touch</a>
@@ -439,8 +478,9 @@
       </div>   <!-- end of social icons -->
     </footer>
 
-    <a href="#intro"><span class="go-to-top active bg-light-subtle position-fixed p-3 rounded-1 opacity-1">
-      <i class="bi bi-arrow-up h5 fw-bold text-light"></i></span>
+    <a href="#intro"><span class="go-to-top active position-fixed p-2 p-md-3 rounded-circle">
+      <i class="bi bi-chevron-up h5"></i>
+    </span>
     </a>
  
 
