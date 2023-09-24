@@ -75,8 +75,12 @@
       .offcanvas-start{
         /* border: 1px solid salmon; */
         display: block;
-        max-width: 60%;
+        max-width: 70%;
         height: 70%;
+        backdrop-filter: blur(5px);
+        background: rgba(34, 34, 34, 0.8);
+        border-right: 1px solid  rgba(136,136,136,0.1);
+        border-bottom: 1px solid rgba(136,136,136,0.1);
       }
 
       /* .nav-bar-nav:hover .nav-link:not(:hover) {
@@ -86,7 +90,37 @@
       } */
 
       div > h2 {
+        position: relative;
         animation-delay: 0.5s;
+      }
+
+      /* .chonky-underline::after {
+        content: "";
+        position: absolute;
+        left: 25%;
+        bottom: 23%;
+        width: 50%;
+        z-index: -1;
+        height: 0.3em;
+        background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+        transition: all 0.1s ease-in-out;
+      }
+
+      #portfolio .chonky-underline::after {
+        content: "";
+        position: absolute;
+        left: 27%;
+        bottom: 3%;
+        width: 60%;
+        z-index: -1;
+        height: 0.3em;
+        background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+        transition: all 0.1s ease-in-out;
+      } */
+
+      a > i {
+        color: steelblue;
+        transition: all 0.1s ease-in-out;
       }
 
       .navbar-brand:hover {
@@ -101,10 +135,11 @@
 
       .list-group-flush:hover .list-group-item:not(:hover) {
         opacity: 0.5;
-        transition: all 200ms ease-in-out;
+        transition: all 0.5s ease;
       }
+
       .list-group-item {
-        transition: all 200ms ease-in-out;
+        transition: all 0.5s ease;
       }
       /* .list-group-item:hover {
         transform: scale(1.15);
@@ -137,6 +172,33 @@
         }
         
       }
+
+      /* @media screen and (max-width: 770px) {
+          .chonky-underline::after {
+          content: "";
+          position: absolute;
+          left: 10%;
+          bottom: 27%;
+          width: 80%;
+          z-index: -1;
+          height: 0.3em;
+          background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+          transition: all 0.1s ease-in-out;
+        }
+
+      #portfolio .chonky-underline::after {
+          content: "";
+          position: absolute;
+          left: -3%;
+          bottom: 3%;
+          width: 65%;
+          z-index: -1;
+          height: 0.3em;
+          background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+          transition: all 0.1s ease-in-out;
+        }
+
+      } */
 
 
     </style>
@@ -192,7 +254,7 @@
                   </li>
                 </ul>
               </div>
-              <p class="m-0 d-md-none mt-5 text-secondary d-block position-absolute bottom-0 start-0">&copy 2023.Sharmaine Cardines.</p>
+              <small class="m-0 d-md-none mt-5 text-secondary d-block position-absolute bottom-0 start-0">&copy 2023.Sharmaine Cardines.</small>
             </div>
             
           </div>
@@ -217,11 +279,11 @@
       
       <div class="row justify-content-center align-items-center text-light">
 
-        <div class="col-12 text-center">
+        <div class="col-12 text-center mb-5">
           <img class="img-fluid object-fit-cover rounded-circle border border-4 border-white p-2" src="images/poster.jpg" alt="">
         </div>
         <div class="col-12 text-center text-lg-left">
-          <h2 class="display-1 fw-semibold pb-3 anim text-center">ABOUT ME</h2>
+          <h2 class="display-1 fw-semibold pb-3 text-center chonky-underline anim">ABOUT ME</h2>
           <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
           <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>   
         </div>
@@ -234,7 +296,7 @@
 
       <div class="container-lg px-0">
         <div class="text-left text-md-center">
-          <h2 class="display-1 fw-semibold anim">MY<br>PROJECTS</h2>
+          <h2 class="display-1 fw-semibold anim chonky-underline">MY<br>PROJECTS</h2>
         </div>
       </div>
 
