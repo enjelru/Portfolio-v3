@@ -154,6 +154,32 @@ a > i {
   animation: moveup 0.5s linear forwards;
 }
 
+.btn span {
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: -8px;
+  vertical-align: middle;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+
+.btn span {
+  padding-right: 25px;
+}
+
+.btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
 /* .sticky-top {
   height: 20px;
   position: fixed;
