@@ -1,271 +1,255 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SHAMC | Portfolio </title>
 
-    <!-- Boostrap 5 CDN -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHAMC | Portfolio </title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Boostrap 5 CDN -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
-    <!-- bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-  </head>
-  <body>
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- background image intro -->
-    <header id="intro" class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill" style="background-image: url(https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1039&q=80); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
-      
-      <div class="container-fluid px-0 bg-overlay d-flex flex-column">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md w-100" data-bs-theme="dark">
-          <div class="container-lg py-2 justify-content-start justify-content-sm-between px-sm-5">
-            <!-- toogle button for mobile nav -->
-            <button class="navbar-toggler rounded-5 me-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="bi bi-three-dots-vertical"></i>
-            </button>
+</head>
 
-            <!-- navbar brand -->
-            <a href="#home" class="navbar-brand fw-semibold text-warning fs-3 fs-md-1">Sham<span class="text-white">C</span>
-            </a>
+<body>
 
-            <!-- offcanvas -->
-            <div class="offcanvas offcanvas-start rounded-end-3 bg-blur" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="main-navLabel">
-                  <i class="bi bi-stars pe-3"></i>Welcome
-                </h5>
-                <button class="btn-close rounded-circle shadow-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <!-- navbar links -->
-              <div class="offcanvas-body navbar-collapse justify-content-end" id="main-nav">
-                <ul class="navbar-nav pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#intro">
-                      <i class="bi bi-house-door-fill pe-3 d-md-none h4"></i>Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#about">
-                      <i class="bi bi-person-fill d-md-none pe-3 h4"></i>About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#portfolio">
-                      <i class="bi bi-book-half pe-3 d-md-none h4"></i>Projects</a>
-                  </li>
-                  <li class="nav-item d-md-none ">
-                    <a class="nav-link text-white" href="#contact">
-                      <i class="bi bi-telephone-fill pe-3 h4 d-md-none"></i>Contact</a>
-                  </li>
-                  <li class="nav-item ms-2 d-none d-md-inline">
-                    <a class="btn btn-outline-warning" href="#contact">Get in Touch</a>
-                  </li>
-                </ul>
-              </div>
-              <small class="m-0 d-md-none mt-5 text-secondary d-block position-absolute bottom-0 start-0">&copy 2023.Sharmaine Cardines.</small>
+  <!-- background image intro -->
+  <header id="intro" class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill"
+    style="background-image: url(https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1039&q=80); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
+
+    <div class="container-fluid px-0 bg-overlay d-flex flex-column">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md w-100" data-bs-theme="dark">
+        <div class="container-lg py-2 justify-content-start justify-content-sm-between px-sm-5">
+          <!-- toogle button for mobile nav -->
+          <button class="navbar-toggler rounded-5 me-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots-vertical"></i>
+          </button>
+
+          <!-- navbar brand -->
+          <a href="#home" class="navbar-brand fw-semibold text-warning fs-3 fs-md-1">Sham<span
+              class="text-white">C</span>
+          </a>
+
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-start rounded-end-3 bg-blur" data-bs-scroll="true" data-bs-backdrop="true"
+            tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="main-navLabel">
+                <i class="bi bi-stars pe-3"></i>Welcome
+              </h5>
+              <button class="btn-close rounded-circle shadow-none" type="button" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
-            
+            <!-- navbar links -->
+            <div class="offcanvas-body navbar-collapse justify-content-end" id="main-nav">
+              <ul class="navbar-nav pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#intro">
+                    <i class="bi bi-house-door-fill pe-3 d-md-none h4"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">
+                    <i class="bi bi-person-fill d-md-none pe-3 h4"></i>About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#portfolio">
+                    <i class="bi bi-book-half pe-3 d-md-none h4"></i>Projects</a>
+                </li>
+                <li class="nav-item d-md-none ">
+                  <a class="nav-link text-white" href="#contact">
+                    <i class="bi bi-telephone-fill pe-3 h4 d-md-none"></i>Contact</a>
+                </li>
+              </ul>
+            </div>
+            <small class="m-0 d-md-none mt-5 text-secondary d-block position-absolute bottom-0 start-0">&copy
+              2023.Sharmaine Cardines.</small>
           </div>
-        </nav>
-        <!-- ==== end of navbar ==== -->
 
-        <!-- hero text -->
-        <div class="container-md my-auto text-center">
-          <div class="text-white text-uppercase">
-            <h1 class="fw-bold display-2">Sharmaine Cardines</h2>
-            <h5>Freelance Front-End Web Developer</h5> 
-          </div>
         </div>
-        <!-- ==== end of hero text ==== -->
-   
-      </div>
-    </header>
+      </nav>
+      <!-- ==== end of navbar ==== -->
 
-    <!-- about me -->
-
-    <section id="about">
-      
-      <div class="row justify-content-center align-items-center text-light">
-
-        <div class="col-12 text-center mb-5">
-          <img class="pfp img-fluid object-fit-cover rounded-circle border border-4 border-white p-2" src="images/me.jpg" alt="pfp">
-        </div>
-        <div class="col-12 text-center text-lg-left">
-          <h2 class="display-md-1 display-4 fw-semibold pb-3 text-center chonky-underline anim text-danger"> <<span class="text-white">ABOUT ME</span>/> </h2>
-          <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
-          <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>   
+      <!-- hero text -->
+      <div class="container-md my-auto text-center">
+        <div class="text-white text-uppercase">
+          <h1 class="fw-bold display-2">Sharmaine Cardines</h2>
+            <h5>Freelance Front-End Web Developer</h5>
         </div>
       </div>
-    </section>
+      <!-- ==== end of hero text ==== -->
 
-    <!-- portfolio grid -->
+    </div>
+  </header>
 
-    <section id="portfolio">
+  <!-- about me -->
 
-      <div class="container-lg px-0">
-        <div class="text-center text-md-center">
-          <h2 class="display-md-1 display-4 fw-semibold anim text-danger  chonky-underline"> <<span class="text-white" >MY PROJECTS</span>/> </h2>
-        </div>
+  <section id="about">
+
+    <div class="row justify-content-center align-items-center text-light">
+
+      <div class="col-12 text-center mb-5">
+        <img class="pfp img-fluid object-fit-cover rounded-circle border border-4 border-white p-2" src="images/me.jpg"
+          alt="pfp">
       </div>
+      <div class="col-12 text-center text-lg-left">
+        <h2 class="display-md-1 display-4 fw-semibold pb-3 text-center chonky-underline anim text-danger">
+          <<span class="text-white">ABOUT ME</span>/>
+        </h2>
+        <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit
+          reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
+        <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi
+          natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>
+      </div>
+    </div>
+  </section>
 
-      <!-- cards -->
-      <div class="row justify-content-center my-4 pt-3 g-0 text-left">
-   
-        <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
-          <div class="card text-light border-0">
-            <div class="card-wrapper">
-            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1120&q=80" alt="image">
-          </div>
-            <div class="card-body py-3">
-              <h5 class="card-title display-6">Portfolio Title</h5>
-              <p class="text-secondary">Lorem ipsum dolor sit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
-          <div class="card text-light border-0">
-            <div class="card-wrapper">
-              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="image">
-            </div>
-            <div class="card-body py-3">
-              <h5 class="card-title display-6">Portfolio Title</h5>
-              <p class="text-secondary">Lorem ipsum dolor sit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 px-0 col-md-12 p-md-3 pb-5 col-lg-4 px-lg-3 px-0">
-          <div class="card text-light border-0">
-            <div class="card-wrapper">
-              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
-            </div>
-            <div class="card-body py-3">
-              <h5 class="card-title display-6">Portfolio Title</h5>
-              <p class="text-secondary">Lorem ipsum dolor sit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 px-0 col-md-6 p-md-3 col-lg-5 pb-5 col-lg-6 px-lg-3 col-xxl-4 px-0">
-          <div class="card text-light border-0">
-            <div class="card-wrapper">
-              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="image">
-            </div>
-            <div class="card-body py-3">
-              <h5 class="card-title display-5">Portfolio Title</h5>
-              <p class="text-secondary">Lorem ipsum dolor sit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 px-0 col-md-6 p-md-3 col-lg-5 pb-5 col-lg-6 col-xxl-4  px-lg-3 px-0">
-          <div class="card text-light border-0">
-            <div class="card-wrapper">
-              <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="image">
-            </div>
-            <div class="card-body py-3">
-              <h5 class="card-title display-5">Portfolio Title</h5>
-              <p class="text-secondary">Lorem ipsum dolor sit.</p>
-            </div>
+  <!-- portfolio grid -->
+
+  <section id="portfolio">
+
+    <div class="container-lg px-0">
+      <div class="text-center text-md-center">
+        <h2 class="display-md-1 display-4 fw-semibold anim text-danger  chonky-underline">
+          <<span class="text-white">Project Experience</span>/>
+        </h2>
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div class="row justify-content-center my-4 pt-3 g-0 text-left">
+
+      <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
+        <div class="card text-light border-0">
+          <div class="card-body py-3">
+            <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
+            <p className="">Restaurant Review App</p>
+            <small>Interior website for Mara Design Office</small>
+            <br />
+            <small>Tools: React, Bootstrap, Laravel, MySQL</small>
           </div>
         </div>
       </div>
+      <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
+        <div class="card text-light border-0">
+          <div class="card-body py-3">
+            <p className="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
+            <p className="">MADO</p>
+            <small>Interior website for Mara Design Office</small>
+            <br />
+            <small>Tools: HTML, CSS, Bootstrap, Javscript</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-info px-4" type="submit"><span>All Project Details </span></button>
+    </div>
+  </section>
+
+  <!-- contact form -->
+  <!-- form-control, form label, form-select, input-group, input-group-text -->
+  <section id="contact">
+    <div class="container-lg text-light">
       <div class="text-center">
-        <button class="btn btn-info px-4" type="submit"><span>All Project Details </span></button>
+        <h2>Get in Touch</h2>
+        <p class="lead">Want to colaborate? Fill out the form to contact me directly...</p>
       </div>
-    </section>
 
-    <!-- contact form -->
-    <!-- form-control, form label, form-select, input-group, input-group-text -->
-    <section id="contact">
-      <div class="container-lg text-light">
-        <div class="text-center">
-          <h2>Get in Touch</h2>
-          <p class="lead">Want to colaborate? Fill out the form to contact me directly...</p>
-        </div>
-
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-8 col-lg-8">
-            <form class="row">
-              <div class="col-l-3 col-md-6">
-                <label for="email" class="form-label">Email address:</label>
-                <div class="input-group mb-4">
-                  <span class="input-group-text">
-                    <i class="bi bi-envelope-fill"></i>
-                  </span>
-                  <input type="email" class="form-control" id="email" placeholder="e.g. milagring@example.com" aria-label="e.g. milagring@example.com" style="font-size: 14px;" required>
-                </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 col-lg-8">
+          <form class="row">
+            <div class="col-l-3 col-md-6">
+              <label for="email" class="form-label">Email address:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input type="email" class="form-control" id="email" placeholder="e.g. milagring@example.com"
+                  aria-label="e.g. milagring@example.com" style="font-size: 14px;" required>
               </div>
+            </div>
 
-              <div class="col-l-3 col-md-6">
-                <label for="name" class="form-label">Name:</label>
-                <div class="input-group mb-4">
-                  <span class="input-group-text">
-                    <i class="bi bi-person-fill"></i>
-                  </span>
-                  <input type="text" class="form-control" id="name" placeholder="e.g. Milagring" style="font-size: 14px;" required>
-                </div>
+            <div class="col-l-3 col-md-6">
+              <label for="name" class="form-label">Name:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input type="text" class="form-control" id="name" placeholder="e.g. Milagring" style="font-size: 14px;"
+                  required>
               </div>
+            </div>
 
-              <div class="form-floating mb-4 mt-5">
-                <textarea id="query" class="form-control" style="height: 140px;" required></textarea>
-                <label for="query">Your message...</label>
-              </div>
+            <div class="form-floating mb-4 mt-5">
+              <textarea id="query" class="form-control" style="height: 140px;" required></textarea>
+              <label for="query">Your message...</label>
+            </div>
 
-              <div class="text-center mb-4">
-                <button class="btn btn-info px-4" type="submit">Submit</button>
-              </div>
-              
-            </form>
-          </div>  <!-- end of contact forms -->
-        </div>
+            <div class="text-center mb-4">
+              <button class="btn btn-info px-4" type="submit">Submit</button>
+            </div>
+
+          </form>
+        </div> <!-- end of contact forms -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <div class="container-fluid d-flex align-items-center">
-        <div class="container-md text-center mt-4">
-          <div class="list-group-flush d-flex justify-content-center gap-4">
-            <a href="#" class="list-group-item">
-              <i class="bi bi-github fs-2"></i>
-            </a>
-            <a href="#" class="list-group-item">
-              <i class="bi bi-linkedin fs-2"></i>
-            </a>
-            <a href="#" class="list-group-item">
-              <i class="bi bi-instagram fs-2"></i>
-            </a>
-            <a href="#" class="list-group-item">
-              <i class="bi bi-messenger fs-2"></i>
-            </a>
-          </div>
-          <div class="mt-2 d-flex justify-content-center gap-3 flex-wrap">
-            <p class="m-0">
-              <i class="bi bi-envelope-at-fill"></i> yourName@gmail.com</p>
-            <p class="m-0">
-              <i class="bi bi-telephone-fill"></i> ####-###-####</p>
-          </div>
-          <button class="btn btn-info my-4">
-            <i class="bi bi-download"></i> Download CV</button>
+  <footer>
+    <div class="container-fluid d-flex align-items-center">
+      <div class="container-md text-center mt-4">
+        <div class="list-group-flush d-flex justify-content-center gap-4">
+          <a href="#" class="list-group-item">
+            <i class="bi bi-github fs-2"></i>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="bi bi-linkedin fs-2"></i>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="bi bi-instagram fs-2"></i>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="bi bi-messenger fs-2"></i>
+          </a>
         </div>
-      </div>   <!-- end of social icons -->
-    </footer>
+        <div class="mt-2 d-flex justify-content-center gap-3 flex-wrap">
+          <p class="m-0">
+            <i class="bi bi-envelope-at-fill"></i> yourName@gmail.com
+          </p>
+          <p class="m-0">
+            <i class="bi bi-telephone-fill"></i> ####-###-####
+          </p>
+        </div>
+        <button class="btn btn-info my-4">
+          <i class="bi bi-download"></i> Download CV</button>
+      </div>
+    </div> <!-- end of social icons -->
+  </footer>
 
-    <a href="#intro"><span class="go-to-top active position-fixed p-2 p-md-3 rounded-circle">
+  <a href="#intro"><span class="go-to-top active position-fixed p-2 p-md-3 rounded-circle">
       <i class="bi bi-chevron-up h5"></i>
     </span>
-    </a>
- 
-
-    <!-- footer Made with passion by Sharmaine Cardines. All right reserved. -->
-   
+  </a>
 
 
+  <!-- footer Made with passion by Sharmaine Cardines. All right reserved. -->
 
-    <!-- Boostrap 5 CDN -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
-    <script src="js/bootstrap.bundle.js"></script>
-  </body>
+
+
+  <!-- Boostrap 5 CDN -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
