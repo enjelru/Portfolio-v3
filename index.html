@@ -5,15 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SHAMC | Portfolio </title>
-
-  <!-- Boostrap 5 CDN -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <link rel="stylesheet" href="css/bootstrap.css">
-
-  <!-- bootstrap icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -27,7 +22,7 @@
     <div class="container-fluid px-0 bg-overlay d-flex flex-column">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md w-100" data-bs-theme="dark">
-        <div class="container-lg py-2 justify-content-start justify-content-sm-between px-sm-5">
+        <div class="container-md py-2 justify-content-start justify-content-sm-between px-sm-5">
           <!-- toogle button for mobile nav -->
           <button class="navbar-toggler rounded-5 me-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,13 +55,13 @@
                   <a class="nav-link text-white" href="#about">
                     <i class="bi bi-person-fill d-md-none pe-3 h4"></i>About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#portfolio">
-                    <i class="bi bi-book-half pe-3 d-md-none h4"></i>Projects</a>
+                <li class="nav-item ">
+                  <a class="nav-link text-white" href="#tool">
+                    <i class="bi bi-telephone-fill pe-3 h4 d-md-none"></i>Tools</a>
                 </li>
-                <li class="nav-item d-md-none ">
-                  <a class="nav-link text-white" href="#contact">
-                    <i class="bi bi-telephone-fill pe-3 h4 d-md-none"></i>Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#project">
+                    <i class="bi bi-book-half pe-3 d-md-none h4"></i>Projects</a>
                 </li>
               </ul>
             </div>
@@ -92,68 +87,115 @@
 
   <!-- about me -->
 
-  <section id="about">
+  <section id="about" class="container-md px-md-5 px-0">
 
-    <div class="row justify-content-center align-items-center text-light">
+    <div class="row justify-content-center align-items-center text-light px-md-5 px-0">
 
       <div class="col-12 text-center mb-5">
         <img class="pfp img-fluid object-fit-cover rounded-circle border border-4 border-white p-2" src="images/me.jpg"
           alt="pfp">
       </div>
-      <div class="col-12 text-center text-lg-left">
-        <h2 class="display-md-1 display-4 fw-semibold pb-3 text-center chonky-underline anim text-danger">
-          <<span class="text-white">ABOUT ME</span>/>
-        </h2>
-        <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit
-          reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
-        <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi
-          natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>
+      <div class="container-md px-0">
+        <div class="col-12 text-center text-lg-left px-lg-5 px-0">
+          <h2 class="display-md-1 display-4 fw-semibold pb-3 text-center chonky-underline anim text-danger">
+            <<span class="text-white">about</span>/>
+          </h2>
+          <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit
+            reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
+          <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi
+            natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- tools -->
+
+  <section id="tool" class="px-lg-5 px-0">
+    <div class="text-center text-md-center">
+      <h2 class="display-md-1 display-4 fw-semibold anim text-danger chonky-underline">
+        <<span class="text-white">tools</span>/>
+      </h2>
+      <div class="container-md px-5 my-5">
+        <div class="row justify-content-center gap-2 text-left">
+          <div class="col-12 px-0 col-md-6 col-lg-5">
+            <div class="card text-light border-0">
+              <div class="card-body py-3">
+                <p class="card-title">React</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 px-0 col-md-6 col-lg-5">
+            <div class="card text-light border-0">
+              <div class="card-body py-3">
+                <p class="card-title">Laravel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 px-0 col-md-6 col-lg-5">
+            <div class="card text-light border-0">
+              <div class="card-body py-3">
+                <p class="card-title">MySQL</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 px-0 col-md-6 col-lg-5">
+            <div class="card text-light border-0">
+              <div class="card-body py-3">
+                <p class="card-title">ExpressJs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
   <!-- portfolio grid -->
 
-  <section id="portfolio">
+  <section id="project" class="px-lg-5 px-0">
 
-    <div class="container-lg px-0">
+    <div class="">
       <div class="text-center text-md-center">
         <h2 class="display-md-1 display-4 fw-semibold anim text-danger  chonky-underline">
-          <<span class="text-white">Project Experience</span>/>
+          <<span class="text-white">project experience</span>/>
         </h2>
-      </div>
-    </div>
-
-    <!-- cards -->
-    <div class="row justify-content-center my-4 pt-3 g-0 text-left">
-
-      <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
-        <div class="card text-light border-0">
-          <div class="card-body py-3">
-            <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
-            <p class="">Restaurant Review App</p>
-            <small>Interior website for Mara Design Office</small>
-            <br />
-            <small>Tools: React, Bootstrap, Laravel, MySQL</small>
+        <!-- cards -->
+        <div class="container-md px-5 my-5">
+          <div class="d-flex gap-2 justify-content-center text-left flex-wrap">
+            <div class="col-12 px-0 col-md-6 col-lg-5 p-lg-">
+              <div class="card text-light border-0">
+                <div class="card-body py-3">
+                  <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
+                  <p class="">Restaurant Review App</p>
+                  <small>Interior website for Mara Design Office</small>
+                  <br />
+                  <small>Tools: React, Bootstrap, Laravel, MySQL</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-0 col-md-6 col-lg-5 p-lg-">
+              <div class="card text-light border-0">
+                <div class="card-body py-3">
+                  <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
+                  <p class="">MADO</p>
+                  <small>Interior website for Mara Design Office</small>
+                  <br />
+                  <small>Tools: HTML, CSS, Bootstrap, Javscript</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 px-0 col-md-6 p-md-3 col-lg-4 pb-5 px-lg-3 px-0">
-        <div class="card text-light border-0">
-          <div class="card-body py-3">
-            <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
-            <p class="">MADO</p>
-            <small>Interior website for Mara Design Office</small>
-            <br />
-            <small>Tools: HTML, CSS, Bootstrap, Javscript</small>
-          </div>
-        </div>
-      </div>
     </div>
+
   </section>
 
-  <footer>
-    <div class="container-fluid d-flex align-items-center">
+  <footer class="pb-5">
+    <div class="pb-5 d-flex align-items-center">
       <div class="container-md text-center mt-4">
         <div class="list-group-flush d-flex justify-content-center gap-4">
           <a href="#" class="list-group-item">
@@ -188,11 +230,7 @@
 
   <!-- footer Made with passion by Sharmaine Cardines. All right reserved. -->
 
-
-
-
   <!-- Boostrap 5 CDN -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
   <script src="js/bootstrap.bundle.js"></script>
 </body>
