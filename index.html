@@ -10,16 +10,17 @@
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 </head>
 
 <body>
 
   <!-- background image intro -->
-  <header id="intro" class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill"
+  <header id="backToTop" class="container-fluid d-flex flex-column px-0 img-fluid object-fit-fill"
     style="background-image: url(https://images.unsplash.com/photo-1590959651373-a3db0f38a961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1039&q=80); background-position: center; background-size: cover; background-repeat: no-repeat; height: 600px;">
 
-    <div class="container-fluid px-0 bg-overlay d-flex flex-column">
+    <div class="px-0 bg-overlay d-flex flex-column">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md w-100" data-bs-theme="dark">
         <div class="container-md py-2 justify-content-start justify-content-sm-between px-sm-5">
@@ -30,7 +31,7 @@
           </button>
 
           <!-- navbar brand -->
-          <a href="#home" class="navbar-brand fw-semibold text-warning fs-3 fs-md-1">Sham<span
+          <a href="/" class="navbar-brand fw-semibold text-warning fs-3 fs-md-1">.SM<span
               class="text-white">C</span>
           </a>
 
@@ -48,7 +49,7 @@
             <div class="offcanvas-body navbar-collapse justify-content-end" id="main-nav">
               <ul class="navbar-nav pe-3">
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#intro">
+                  <a class="nav-link text-white" href="#backToTop">
                     <i class="bi bi-house-door-fill pe-3 d-md-none h4"></i>Home</a>
                 </li>
                 <li class="nav-item">
@@ -77,7 +78,7 @@
       <div class="container-md my-auto text-center">
         <div class="text-white text-uppercase">
           <h1 class="fw-bold display-2">Sharmaine Cardines</h2>
-            <h5>Freelance Front-End Web Developer</h5>
+            <h5>Fullstack Web Developer</h5>
         </div>
       </div>
       <!-- ==== end of hero text ==== -->
@@ -100,10 +101,8 @@
           <h2 class="display-md-1 display-4 fw-semibold pb-3 text-center chonky-underline anim text-danger">
             <<span class="text-white">about</span>/>
           </h2>
-          <p class="font-monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum impedit
-            reiciendis ea perspiciatis cumque, repudiandae cupiditate libero neque facere.</p>
-          <p class="font-monospace">Laborum quam temporibus beatae necessitatibus neque! Id laudantium corrupti eligendi
-            natus, minus facere minima veritatis, magni earum animi quia blanditiis?</p>
+          <p class="">I'm a Fullstack Developer, based in the Philippines. <br>Currently focused on building frontend responsive web design.</p>
+          <p class="">I'm a career-shifter, took a bootcamp class to enhance my skills in web design and coding in general. By the way, I recently transitioned to git bash terminal and I'm never going back. </p>
         </div>
       </div>
     </div>
@@ -121,7 +120,8 @@
           <div class="col-12 px-0 col-md-6 col-lg-5">
             <div class="card text-light border-0">
               <div class="card-body py-3">
-                <p class="card-title">React</p>
+                <p class="card-title">ReactJs</p>
+                <i class="fa-brands fa-react"></i>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@
           <div class="col-12 px-0 col-md-6 col-lg-5">
             <div class="card text-light border-0">
               <div class="card-body py-3">
-                <p class="card-title">ExpressJs</p>
+                <p class="card-title">NodeJs</p>
               </div>
             </div>
           </div>
@@ -168,22 +168,22 @@
             <div class="col-12 px-0 col-md-6 col-lg-5 p-lg-">
               <div class="card text-light border-0">
                 <div class="card-body py-3">
-                  <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
-                  <p class="">Restaurant Review App</p>
+                  <p class="card-title fst-italic">KodeGo - Fullstack Web Development Bootcamp</p>
+                  <p class="fs-4">Restaurant Review App</p>
                   <small>Interior website for Mara Design Office</small>
                   <br />
-                  <small>Tools: React, Bootstrap, Laravel, MySQL</small>
+                  <small>Tools: <span class="fst-italic">React, Bootstrap, Laravel, MySQL</span></small>
                 </div>
               </div>
             </div>
             <div class="col-12 px-0 col-md-6 col-lg-5 p-lg-">
               <div class="card text-light border-0">
                 <div class="card-body py-3">
-                  <p class="card-title">KodeGo - Fullstack Web Development Bootcamp</p>
-                  <p class="">MADO</p>
+                  <p class="card-title fst-italic">KodeGo - Fullstack Web Development Bootcamp</p>
+                  <p class="fs-4">MADO</p>
                   <small>Interior website for Mara Design Office</small>
                   <br />
-                  <small>Tools: HTML, CSS, Bootstrap, Javscript</small>
+                  <small>Tools: <span class="fst-italic">HTML, CSS, Bootstrap, Javscript</span></small>
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@
     </div> <!-- end of social icons -->
   </footer>
 
-  <a href="#intro"><span class="go-to-top active position-fixed p-2 p-md-3 rounded-circle">
+  <a href="#backToTop"><span class="go-to-top active position-fixed p-2 p-md-3 rounded-circle">
       <i class="bi bi-chevron-up h5"></i>
     </span>
   </a>
