@@ -2,14 +2,14 @@ section {
   padding: 50px 25px;
 }
 
-.card > img {
+.card>img {
   height: 100%;
   max-height: 405px;
 }
 
 .bg-overlay {
   background-color: transparent;
-  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.3) 55%,rgb(33,37,41) 100%);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 55%, rgb(33, 37, 41) 100%);
   opacity: 1;
   /* border: 1px solid salmon; */
   height: 100%;
@@ -17,7 +17,7 @@ section {
 }
 
 div.card {
-  background-color: rgba(136,136,136,0.1);
+  background-color: rgba(136, 136, 136, 0.1);
   /* height: 100%; 
   max-height: 600px;
   width: 100%;
@@ -28,16 +28,16 @@ div.card {
   overflow: hidden;
 }
 
-.card-wrapper > img {
+.card-wrapper>img {
   display: block;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
   transition: all 200ms ease-in-out;
   cursor: pointer;
 }
 
- .card-img-top:hover {
+.card-img-top:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -49,24 +49,26 @@ div.card {
   /* aspect-ratio: 1 / 1; */
 }
 
-.offcanvas.showing, .offcanvas.show:not(.hiding) {
-transform: none;
-backdrop-filter: blur(3px);
+.offcanvas.showing,
+.offcanvas.show:not(.hiding) {
+  transform: none;
+  backdrop-filter: blur(3px);
 }
 
 .offcanvas-body {
   width: 100%;
   /* border: 1px solid salmon; */
 }
-.offcanvas-start{
+
+.offcanvas-start {
   /* border: 1px solid salmon; */
   display: block;
   max-width: 70%;
   height: 70%;
   /* backdrop-filter: blur(5px); */
   background: rgba(31, 30, 30, 0.9);
-  border-right: 1px solid  rgba(136,136,136,0.1);
-  border-bottom: 1px solid rgba(136,136,136,0.1);
+  border-right: 1px solid rgba(136, 136, 136, 0.1);
+  border-bottom: 1px solid rgba(136, 136, 136, 0.1);
 }
 
 /* .nav-bar-nav:hover .nav-link:not(:hover) {
@@ -79,7 +81,7 @@ backdrop-filter: blur(3px);
   pointer-events: none;
 }
 
-div > h2 {
+div>h2 {
   position: relative;
   animation-delay: 0.5s;
 }
@@ -108,8 +110,8 @@ div > h2 {
   transition: all 0.1s ease-in-out;
 } */
 
-a > i {
-  color: steelblue;
+a>i {
+  color: #e65c00;
   transition: all 0.1s ease-in-out;
 }
 
@@ -131,6 +133,7 @@ a > i {
 .list-group-item {
   transition: all 0.5s ease;
 }
+
 /* .list-group-item:hover {
   transform: scale(1.15);
   transition: all 200ms ease-in-out;
@@ -140,6 +143,7 @@ a > i {
 .bi-chevron-up {
   color: magenta;
 }
+
 .go-to-top {
   bottom: 15px;
   right: 15px;
@@ -184,6 +188,13 @@ a > i {
   right: 0;
 }
 
+.btn-info {
+  --bs-btn-bg: #e65c00;
+  --bs-btn-border-color: #e65c00;
+  --bs-btn-hover-bg: #c25106;
+  --bs-btn-hover-border-color:#c25106;
+}
+
 /* .sticky-top {
   height: 20px;
   position: fixed;
@@ -210,18 +221,18 @@ a > i {
 
 /* CSS ANIMATION */
 @keyframes moveup {
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
-  
+
 }
 
 @keyframes popDown {
-  0%{
+  0% {
     transform: translateY(-100px);
   }
-  
+
 }
 
 /* @media screen and (max-width: 770px) {
