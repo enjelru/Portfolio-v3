@@ -9,4 +9,4 @@
 ####
 Project links: 
 + Review Rating App is a work in progress, final link will be updated. The tools I used are Reactjs, Bootstrap, Laravel, and MySQL.
-+ MADO is open to view. The project is a static website using HTML, CSS, and Bootstrap. 
++ MADO Interior Office Website is ready to view. The project is a static website using HTML, CSS, and Bootstrap. 
